@@ -7,6 +7,22 @@
            <link rel="icon" type="image/png" sizes="32x32" href="./Fabicon.png">
     <!-- 파비콘 이미지 연결 -->
     <style>
+       body {
+        position: relative;
+        z-index: 0;
+        }
+
+        body::before {
+        content: "";
+        position: fixed; /* 화면 전체 덮기 */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("./bg.jpg") repeat center/cover;
+        opacity: 0.8; /* 🔥 투명도 */
+        z-index: -1;
+        }
         div{
             width: 1320px;
             margin: 0px auto;
